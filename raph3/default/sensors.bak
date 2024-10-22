@@ -1,0 +1,38 @@
+[
+    {
+        "model": "AMT1001_H",
+        "math": "(value * 2.7 / 65535) / 0.03",
+        "type": "adc",
+        "name": "Humedad"
+    },
+    {
+        "model": "AMT1001_T",
+        "math": "(value - 24000) / 630.7",
+        "type": "adc",
+        "name": "Temperatura"
+    },
+    {
+        "model": "LM393",
+        "math": "65535 - value",
+        "type": "adc",
+        "name": "Luminosidad"
+    },
+    {
+        "model": "HW-080",
+        "math": "(65535 - value) * 100 / 65535",
+        "type": "adc",
+        "name": "Humedad en Suelo"
+    },
+    {
+        "model": "PIR",
+        "math": "value",
+        "type": "io",
+        "name": "Pir"
+    },
+	{
+        "model": "PUSH-BUTTON",
+        "math": "value",
+        "type": "io",
+        "name": "Boton"
+    }
+]

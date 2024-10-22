@@ -1,0 +1,20 @@
+{
+    "inputs": [],
+    "reset_time": "5",
+    "server": {
+        "port": "80",
+        "domain": "192.168.4.1",
+        "name": "",
+        "protocol": ""
+    },
+    "name": "DeviceDefaultName",
+    "connection": "none",
+    "token": "YourUniqueTokenHere",
+    "exception_time": 5,
+    "client": {
+        "time_sync": "5",
+        "scope": ""
+    },
+    "mode": false,
+    "outputs": []
+}

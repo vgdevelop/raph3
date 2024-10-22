@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="https://es.wikipedia.org/favicon.ico" type="image/x-icon"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración de Usuario</title>
+    <link rel="stylesheet" href="/css/grid.css">
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>    
+    
+    <div class="row card is-center" id="loader">Raph3</div>
+    
+    <div class="row" id="master-content">
+        <div class="col-12">
+            <div class="row tablet-row">
+
+                <div class="col-1 is-center" id="app-menu">
+
+                    <div class="row">
+
+                        <div class="col-12 card is-center app-button-menu" data-target="home-content" id="button-home">
+                            <svg class="button-svg" id="img-home" width="800px" height="800px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m 8 1 c -0.207031 0 -0.410156 0.066406 -0.582031 0.183594 l -7 5 c -0.449219 0.324218 -0.554688 0.945312 -0.234375 1.394531 c 0.191406 0.265625 0.492187 0.421875 0.816406 0.417969 v 4.003906 c 0 1.644531 1.355469 3 3 3 h 8 c 1.644531 0 3 -1.320312 3 -3 v -4.003906 c 0.324219 0.003906 0.625 -0.152344 0.816406 -0.417969 c 0.320313 -0.449219 0.214844 -1.070313 -0.234375 -1.394531 l -7 -5 c -0.171875 -0.117188 -0.375 -0.183594 -0.582031 -0.183594 z m 0 2.226562 l 5 3.570313 v 5.203125 c 0 0.5625 -0.4375 1 -1 1 h -3 v -4 c 0 -0.554688 -0.445312 -1 -1 -1 h -1 c -0.554688 0 -1 0.445312 -1 1 v 4 h -2 c -0.5625 0 -1 -0.4375 -1 -1 v -5.203125 z m 0 0" fill="#2e3436"/>
+                            </svg>
+                        </div>
+
+                        <div class="col-12 card is-center app-button-menu" data-target="actions-content" id="button-actions">
+                            <svg class="button-svg" id="img-actions" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 3.98999H8C6.93913 3.98999 5.92178 4.41135 5.17163 5.1615C4.42149 5.91164 4 6.92912 4 7.98999V17.99C4 19.0509 4.42149 20.0682 5.17163 20.8184C5.92178 21.5685 6.93913 21.99 8 21.99H16C17.0609 21.99 18.0783 21.5685 18.8284 20.8184C19.5786 20.0682 20 19.0509 20 17.99V7.98999C20 6.92912 19.5786 5.91164 18.8284 5.1615C18.0783 4.41135 17.0609 3.98999 16 3.98999Z" stroke="#292D32" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 2V7" stroke="#292D32" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15 2V7" stroke="#292D32" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 16H14" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 12H16" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        
+                        <!--
+                        <div class="col-12 card is-center app-button-menu" data-target="alarms-content" id="button-alarms">
+                            <img class="button-svg" src="icons/alarms.svg" alt="" id="img-alarms">
+                        </div>
+                        -->
+
+                        <div class="col-12 card is-center app-button-menu" data-target="config-content" id="button-config">
+                            <svg class="button-svg" id="img-config" width="800px" height="800px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m 9.5 0.5 c -0.550781 0 -1 0.449219 -1 1 c 0.003906 0.035156 0.007812 0.066406 0.015625 0.097656 c -0.003906 0.003906 -0.011719 0.003906 -0.015625 0.003906 c 0.054688 0.210938 -0.011719 0.433594 -0.175781 0.574219 c -0.058594 0.046875 -0.125 0.085938 -0.195313 0.109375 c -0.285156 0.089844 -0.589844 -0.058594 -0.699218 -0.332031 c 0 0 -0.003907 0 -0.007813 0.003906 c -0.015625 -0.03125 -0.035156 -0.0625 -0.054687 -0.089843 c -0.199219 -0.273438 -0.523438 -0.429688 -0.863282 -0.410157 c -0.191406 0.011719 -0.375 0.078125 -0.53125 0.191407 c -0.445312 0.324218 -0.546875 0.949218 -0.222656 1.394531 c 0.023438 0.027343 0.050781 0.050781 0.074219 0.074219 c 0 0.003906 -0.003907 0.007812 -0.007813 0.011718 c 0.164063 0.136719 0.238282 0.355469 0.1875 0.566406 c -0.015625 0.070313 -0.046875 0.140626 -0.09375 0.199219 c -0.175781 0.242188 -0.507812 0.300781 -0.757812 0.144531 c 0 0 0 0.003907 -0.003906 0.003907 c -0.03125 -0.015625 -0.0625 -0.027344 -0.09375 -0.039063 c -0.089844 -0.03125 -0.1875 -0.046875 -0.28125 -0.046875 c -0.445313 -0.015625 -0.84375 0.265625 -0.980469 0.691407 c -0.171875 0.523437 0.117187 1.085937 0.640625 1.257812 c 0.035156 0.007812 0.066406 0.011719 0.101562 0.015625 c 0 0.003906 0 0.007813 -0.003906 0.015625 c 0.21875 0.011719 0.410156 0.144531 0.492188 0.347656 c 0.027343 0.066406 0.042968 0.140625 0.042968 0.214844 c 0 0.300781 -0.238281 0.542969 -0.535156 0.5625 c 0.003906 0.003906 0.003906 0.007812 0.003906 0.015625 c -0.035156 0.003906 -0.066406 0.007813 -0.101562 0.015625 c -0.523438 0.171875 -0.8125 0.734375 -0.640625 1.261719 c 0.171875 0.523437 0.734375 0.8125 1.261719 0.640625 c 0.03125 -0.011719 0.0625 -0.023438 0.09375 -0.039063 c 0.003906 0.003907 0.003906 0.003907 0.003906 0.007813 c 0.085937 -0.054688 0.179687 -0.085938 0.277344 -0.089844 c 0.113281 -0.007812 0.222656 0.019531 0.320312 0.082031 c 0.0625 0.039063 0.121094 0.089844 0.164062 0.152344 c 0.175782 0.242187 0.125 0.574219 -0.101562 0.761719 l 0.011719 0.011718 c -0.023438 0.023438 -0.050781 0.046876 -0.074219 0.074219 c -0.324219 0.445313 -0.222656 1.070313 0.222656 1.398438 c 0.445313 0.324219 1.070313 0.222656 1.394532 -0.222657 c 0.019531 -0.027343 0.039062 -0.054687 0.054687 -0.085937 c 0.003906 0 0.003906 0 0.007813 0.003906 c 0.078124 -0.203125 0.261718 -0.34375 0.480468 -0.359375 c 0.074219 -0.007812 0.148438 0.003906 0.21875 0.027344 c 0.289063 0.089844 0.449219 0.394531 0.371094 0.679688 c 0.007812 0 0.011719 0 0.015625 0.003906 c -0.007813 0.03125 -0.011719 0.066406 -0.015625 0.097656 c 0 0.550781 0.449219 1 1 1 s 1 -0.449219 1 -1 c 0 -0.035156 -0.003906 -0.066406 -0.007812 -0.101562 h 0.003906 c -0.074219 -0.289063 0.089844 -0.589844 0.375 -0.683594 c 0.074218 -0.023438 0.148437 -0.03125 0.222656 -0.023438 c 0.207031 0.015625 0.394531 0.152344 0.472656 0.359375 c 0.007813 -0.003906 0.011719 -0.007812 0.015625 -0.007812 c 0.015625 0.03125 0.03125 0.058593 0.046875 0.089843 c 0.328125 0.445313 0.953125 0.546876 1.398438 0.222657 c 0.445312 -0.328125 0.546875 -0.953125 0.21875 -1.398438 c -0.023438 -0.027343 -0.046875 -0.050781 -0.074219 -0.074219 c 0.003906 -0.003906 0.007813 -0.003906 0.011719 -0.007812 c -0.226563 -0.191406 -0.273438 -0.527344 -0.097656 -0.769531 c 0.113281 -0.15625 0.296874 -0.238281 0.476562 -0.230469 c 0.097656 0.003906 0.195312 0.03125 0.28125 0.085938 c 0.003906 -0.003907 0.007812 -0.007813 0.011719 -0.011719 c 0.027343 0.015625 0.058593 0.03125 0.089843 0.046875 c 0.527344 0.171875 1.089844 -0.117188 1.261719 -0.640625 c 0.171875 -0.527344 -0.117187 -1.089844 -0.640625 -1.261719 c -0.035156 -0.007812 -0.066406 -0.011719 -0.101562 -0.019531 c 0 -0.003907 0 -0.007813 0.003906 -0.011719 c -0.296875 -0.019531 -0.535156 -0.265625 -0.535156 -0.566406 c 0 -0.296875 0.238281 -0.539063 0.535156 -0.558594 c -0.003906 -0.003906 -0.003906 -0.011719 -0.003906 -0.015625 c 0.035156 -0.003906 0.066406 -0.007813 0.101562 -0.015625 c 0.523438 -0.171875 0.8125 -0.734375 0.640625 -1.261719 c -0.136719 -0.421875 -0.535156 -0.703125 -0.980469 -0.6875 c -0.09375 0 -0.191406 0.015625 -0.28125 0.046875 c -0.03125 0.015625 -0.0625 0.03125 -0.089843 0.046875 c -0.003907 -0.003906 -0.007813 -0.007812 -0.011719 -0.015625 c -0.246094 0.160156 -0.582031 0.101563 -0.757812 -0.144531 c -0.175782 -0.238281 -0.128907 -0.574219 0.097656 -0.765625 c -0.003906 0 -0.007813 -0.003906 -0.011719 -0.007812 c 0.027344 -0.023438 0.050781 -0.046876 0.074219 -0.074219 c 0.328125 -0.445313 0.226562 -1.070313 -0.21875 -1.398438 c -0.15625 -0.109375 -0.339844 -0.175781 -0.53125 -0.1875 c -0.339844 -0.019531 -0.664063 0.136719 -0.867188 0.410157 c -0.015625 0.03125 -0.03125 0.058593 -0.046875 0.089843 c -0.003906 0 -0.007812 -0.003906 -0.011719 -0.003906 c -0.109374 0.273437 -0.414062 0.421875 -0.703124 0.328125 c -0.285157 -0.089844 -0.445313 -0.394531 -0.371094 -0.679688 c 0 0 0 0 -0.003906 0 c 0.003906 -0.035156 0.007812 -0.066406 0.007812 -0.101562 c 0 -0.550781 -0.449219 -1 -1 -1 z m 0 3.5 c 1.378906 0 2.5 1.121094 2.5 2.5 s -1.121094 2.5 -2.5 2.5 s -2.5 -1.121094 -2.5 -2.5 s 1.121094 -2.5 2.5 -2.5 z m -7.011719 6 c -1.367187 0 -2.4999998 1.132812 -2.4999998 2.5 s 1.1328128 2.5 2.4999998 2.5 c 1.367188 0 2.5 -1.132812 2.5 -2.5 s -1.132812 -2.5 -2.5 -2.5 z m 0 2 c 0.289063 0 0.5 0.210938 0.5 0.5 s -0.210937 0.5 -0.5 0.5 c -0.289062 0 -0.5 -0.210938 -0.5 -0.5 s 0.210938 -0.5 0.5 -0.5 z m 0 0" fill="#2e3436"/>
+                            </svg>
+                        </div>
+
+                        <!--
+                        <div class="col-12 card is-center app-button-menu" data-target="user-content" id="button-user">
+                            <img class="button-svg" src="icons/user.svg" alt="" id="img-user">
+                        </div>
+                        -->
+
+                        <div class="col-12 card is-center app-button-menu" data-target="network-content" id="button-network">
+                            <svg class="button-svg" id="img-network" width="800px" height="800px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m 6 0 c -0.554688 0 -1 0.445312 -1 1 v 3 c 0 0.554688 0.445312 1 1 1 h 1 v 2 h -7 v 2 h 2 v 2 h -1 c -0.554688 0 -1 0.445312 -1 1 v 3 c 0 0.554688 0.445312 1 1 1 h 4 c 0.554688 0 1 -0.445312 1 -1 v -3 c 0 -0.554688 -0.445312 -1 -1 -1 h -1 v -2 h 8 v 2 h -1 c -0.554688 0 -1 0.445312 -1 1 v 3 c 0 0.554688 0.445312 1 1 1 h 4 c 0.554688 0 1 -0.445312 1 -1 v -3 c 0 -0.554688 -0.445312 -1 -1 -1 h -1 v -2 h 2 v -2 h -7 v -2 h 1 c 0.554688 0 1 -0.445312 1 -1 v -3 c 0 -0.554688 -0.445312 -1 -1 -1 z m 0 0" fill="#2e3436"/>
+                            </svg>
+                        </div>
+
+                        <div class="col-12 card is-center app-button-menu" data-target="restart-content" id="button-restart">
+                            <svg class="button-svg" id="img-restart" width="800px" height="800px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m 8 0 c -0.550781 0 -1 0.449219 -1 1 v 5 c 0 0.550781 0.449219 1 1 1 s 1 -0.449219 1 -1 v -5 c 0 -0.550781 -0.449219 -1 -1 -1 z m -7 1 l 2.050781 2.050781 c -2.117187 2.117188 -2.652343 5.355469 -1.332031 8.039063 c 1.324219 2.683594 4.214844 4.238281 7.179688 3.851562 c 2.96875 -0.386718 5.367187 -2.625 5.960937 -5.554687 c 0.59375 -2.933594 -0.75 -5.929688 -3.335937 -7.433594 c -0.476563 -0.28125 -1.089844 -0.117187 -1.367188 0.359375 s -0.117188 1.089844 0.359375 1.367188 c 1.851563 1.078124 2.808594 3.207031 2.382813 5.3125 c -0.421876 2.101562 -2.128907 3.691406 -4.253907 3.96875 c -2.128906 0.273437 -4.183593 -0.828126 -5.128906 -2.753907 s -0.566406 -4.226562 0.949219 -5.742187 l 1.535156 1.535156 v -4.003906 c 0 -0.519532 -0.449219 -0.996094 -1 -0.996094 z m 0 0" fill="#2e3436"/>
+                            </svg>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-8" id="app-content">
+
+                    <div class="row content" id="home-content">
+
+                        <!--
+                        <div class="col-4 device-home-container" >
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 device-home-header">
+                                            <a id="device1-name" class="is-center">Sala de Cultivo</a>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 card device-home-inputs">
+                                            <a class="device-input-status">26ºC</a>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 card device-home-inputs">
+                                            <a class="device-input-status">68%</a>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 card device-home-inputs">
+                                            <a class="device-input-status">80%</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                
+
+                    </div>
+
+                    <div class="row content" id="actions-content">
+
+                        <!--
+                        <div class="col-12 device-actions-container">
+                            <div class="row actions-data-row">
+                                <div class="col-12 is-center">
+                                    <h2>Comedor</h2>
+                                </div>
+                            </div>
+
+                            <div class="row actions-data-row">
+                                <div class="col-10">
+                                    Lorem ipsum dolor sit ameu elit. dolorem  atque suscipit culpa? ed maxime dolor modi commodi repellendus! Et aliquid corrupti dolorem!
+                                </div>
+
+                                <div class="col-1 card action-button action-button-toggle"></div>
+                                <div class="col-1 card action-button action-button-delete"></div>
+
+                            </div>
+
+                            <div class="row actions-data-row">
+                                <div class="col-12 card action-button action-button-add"></div>
+                            </div>
+
+                         
+                        </div>
+                    -->
+                        
+                    </div>
+
+                    <div class="row content" id="form-content">
+                        <!-- CONTENIDO DEL FORMULARIO SELECCIONADO -->
+                    </div>
+
+
+                    <div class="row content" id="alarms-content">Alarmas</div>
+
+
+
+                    <div class="row content" id="config-content">
+                      
+
+                    </div>
+
+                    <div class="row content" id="config-form-content">
+                        <div class="col-12" id="form-config" style="padding: 10px;"></div>
+                    </div>
+
+                    
+                    
+                    <div class="row content" id="user-content">Usuario</div>
+                    <div class="row content" id="network-content">
+
+                        <div class="col-12">
+                            <div class="row" id="network-switcher">
+                                <!-- LISTA DE DISPOSITIVOS DE RED -->
+                            </div>
+                        </div>
+
+                        <div class="col-12" id="network-wifi"></div>
+
+                    </div>
+                    <div class="row content" id="restart-content">
+                        
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-4 card form-button is-center">Reiniciar</div>
+                                <div class="col-4 card form-button is-center">Cambiar a Modo AP</div>
+                                <div class="col-4 card form-button is-center">Cambiar a Modo STA</div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-4 card form-button is-center warning">Restablecer de Fabrica</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-3" id="app-data">
+
+                    <!--
+                    <div class="row" id="weather-container">
+                        <div class="col-12 card weather-card">
+
+                            <div class="row">
+                                <div class="col-6 weather-title">Montevideo</div>
+                                <div class="col-6 weather-title">24-04-2024 18:30</div>
+                                <div class="col-6 weather-status ws-left"><a class="weather-title">Nuboso</a></div>
+                                <div class="col-6 weather-status ws-right"><a class="weather-title">Temperatura 26ºC</a></div>
+                                <div class="col-6 weather-status ws-left"><a class="weather-title">UV 7</a></div>
+                                <div class="col-6 weather-status ws-right"><a class="weather-title">Humedad 65%</a></div>
+                                <div class="col-6 weather-status ws-left"><a class="weather-title">Prob. 15%</a></div>
+                                <div class="col-6 weather-status ws-right"><a class="weather-title">Viento NE 15 Km/h</a></div>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                    -->
+                    
+                    <div class="row device-container" id="device-container">
+                    
+                        <!--
+                        <div class="col-12 card device-card">
+
+                            <div class="row device-row is-center">
+
+                                <div class="col-12 device-button-header">
+                                    <div class="row is-center">
+                                        <div class="col-12 device-header is-center"><b>Sala de cultivo</b></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 device-button-content" hidden>
+
+                                    <div class="row is-center">
+
+                                        <div class="col-6 device-output-type">Iluminación</div>
+                                        <div class="col-6 device-output-status">Automatico</div>
+                                        <div class="col-4 is-center device-button-off"><b class="op-80">OFF</b></div>
+                                        <div class="col-4 is-center device-button-auto"><b class="op-80">AUTO</b></div>
+                                        <div class="col-4 is-center device-button-on"><b class="op-80">ON</b></div>
+        
+                                        <div class="col-6 device-output-type">Ventilación</div>
+                                        <div class="col-6 device-output-status">Apagado</div>
+                                        <div class="col-4 is-center device-button-off"><b class="op-80">OFF</b></div>
+                                        <div class="col-4 is-center device-button-auto"><b class="op-80">AUTO</b></div>
+                                        <div class="col-4 is-center device-button-on"><b class="op-80">ON</b></div>
+        
+                                        <div class="col-6 device-output-type">Riego</div>
+                                        <div class="col-6 device-output-status">Encendido</div>
+                                        <div class="col-4 is-center device-button-off"><b class="op-80">OFF</b></div>
+                                        <div class="col-4 is-center device-button-auto"><b class="op-80">AUTO</b></div>
+                                        <div class="col-4 is-center device-button-on"><b class="op-80">ON</b></div>
+        
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            
+                            
+
+                        </div>
+                        -->
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    
+
+    <script src="/js/raph.js"></script>
+    <script src="/js/form.js"></script>
+</body>
+</html>

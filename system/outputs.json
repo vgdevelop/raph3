@@ -1,0 +1,5 @@
+[
+    {"name": "Humedad", "model": "AMT1001", "math": "(value * 2.7 / 65535) / 0.03"},
+    {"name": "Temperatura", "model": "AMT1001", "math": "(value - 34000) / 630.7"},
+    {"name": "Luminosidad", "model": "LM393", "math": "65535 - value"}
+]

@@ -1,0 +1,383 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+    padding: 2px;
+}
+
+.tablet-row {
+    padding: 5px;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #0e121b;
+
+}
+
+.button-svg {
+    width: 30px;
+    height: 30px;
+}
+
+.app-button-menu {
+    padding: 5px;
+}
+
+.app-button-menu:hover {
+    cursor: pointer;
+    background-color: #007afa;
+}
+
+#app-menu {
+    
+}
+
+#app-content {
+    height: 97vh;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #1d2331;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#app-data {
+
+}
+
+.device-button-off {
+    background-color: #ebebec;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.device-button-auto {
+    background-color: #ebebec;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+.device-button-on {
+    background-color: #ebebec;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.device-button-off:hover {
+    background-color: #007afa;
+    cursor: pointer;
+    background-blend-mode: color-burn;
+}
+
+.device-button-auto:hover {
+    background-color: #007afa;
+    cursor: pointer;
+    background-blend-mode: color-burn;
+}
+
+.device-button-on:hover {
+    background-color: #007afa;
+    cursor: pointer;
+    background-blend-mode: color-burn;
+}
+
+.device-row {
+    /* padding: 0px; */
+    /* margin: 0px; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.device-card {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+    background-color: #1d2331;
+}
+
+/*
+.device-card:hover {
+    background-color: #007afa;
+    cursor: pointer;
+}
+*/
+
+.device-card-on {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+    background-color: #007afa;
+}
+
+.on {
+    background-color: #007afa;
+}
+
+.device-card-off {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+    background-color: #1d2331;
+}
+
+.device-header {
+    color: white;
+    opacity: 0.8;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.device-container {
+    margin-top: 5px;
+}
+
+.weather-container {
+    margin-top: 5px;
+}
+
+.device-output-type {
+    padding: 0px;
+    padding-left: 10px;
+    margin: 0px;
+    color:#ffffff;
+    /* margin-top: 5px; */
+}
+
+.device-output-status {
+    padding: 0px;
+    padding-right: 10px;
+    margin: 0px;
+    color:#ffffff;
+    text-align: right;
+    /* margin-top: 5px; */
+}
+
+.op-80 {
+    opacity: 0.5;
+}
+
+.weather-card {
+    padding: 10px;
+    margin: 0px;
+    background-color: #1d2331;
+    background-image: url("./icons/cloudy.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-blend-mode: soft-light;
+}
+
+.weather-row {
+    background-color: white;
+}
+
+.weather-header {
+    color: white;
+    opacity: 0.8;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+    font-size: 2rem;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.weather-title {
+    color: #ffffff;
+}
+
+.ws-left {
+    text-align: left;
+    line-height: 0.9;
+}
+
+.ws-right {
+    text-align: right;
+    line-height: 0.9;
+
+    
+}
+
+.device-home-header {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    
+}
+
+.home-device-name {
+    padding: 0px;
+    color: white;
+    font-size: 2rem;
+}
+
+.device-home-container {
+    padding: 10px;
+    background-color: #0e121b;
+    border-radius: 10px;
+}
+
+.device-prom {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.device-home-inputs {
+    background-color: #1d2331;
+    background-image: url("./icons/stop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-blend-mode: soft-light;
+    text-align: right;
+}   
+
+.device-input-status {
+    color: white;
+    font-weight: 700;
+    opacity: 0.8;
+    text-align: right;
+    padding-right: 0px;
+}
+
+.content {
+    display: none;
+}
+
+#master-content {
+    display: none;
+}
+
+#loader {
+    background-color: black;
+    opacity: 0.8;
+    height: 100vh;
+    color: white;
+    font-size: 4vh;
+}
+
+.device-actions-container {
+    background-color: #0e121b;
+}
+
+.actions-data-row {
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+.action-button {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.action-button:hover {
+    background-color: #007afa;
+    background-blend-mode: color-burn;
+    cursor: pointer;
+}
+
+.action-button-toggle-off {
+    background-image: url("./icons/action-off.svg");
+}
+
+.action-button-toggle-on {
+    background-image: url("./icons/action-on.svg");
+}
+
+.action-button-delete {
+    background-image: url("./icons/stop.svg");
+}
+
+.action-button-add {
+    background-image: url("./icons/plus.svg");
+}
+
+
+#actions-content {
+    color:#ebebec;
+}
+
+#actions-loader {
+    background-color: black;
+    opacity: 0.8;
+    height: 100vh;
+    color: white;
+    font-size: 4vh;
+}
+
+.days {
+    text-align: center;
+    display: inline-flex;
+}
+
+.form-text {
+    color: #007afa;
+}
+
+.form-button-container {
+    text-align: right;
+}
+
+.form-button:hover {
+    background-color: #007afa;
+    background-blend-mode: color-burn;
+    cursor: pointer;
+    color: white;
+}
+
+input::placeholder {
+    color: black; /* Cambia 'gray' por el color que desees */
+}
+
+#network-wifi {
+    padding: 10px;
+    background-color: #1d2331;
+}
+
+.network-card {
+    margin-top: 10px;
+    background-color: #0e121b;
+}
+
+.network-text {
+    margin-top: 0px;
+    color: #007afa;
+}
+
+
+.network-device:hover {
+    color: white;
+}
+
+.app-button:hover {
+    background-color: #007afa;
+    background-blend-mode: color-burn;
+    cursor: pointer;
+}
+
+.warning {
+    background-color: #d43939;
+    color: white;
+}
+
+.warning:hover {
+    background-color: #ad1c1c;
+    background-blend-mode: color-burn;
+    cursor: pointer;
+}

@@ -1,0 +1,76 @@
+{
+    "devices": [
+        {
+            "id": "1",
+            "name": "Sala",
+            "token": "F4f4tgfFSDG564F3fgGg664Fsdfsdf",
+            "inputs": [
+                {
+                    "name": "Humedad",
+                    "port": 26,
+                    "unit": "%"
+                },
+                {
+                    "name": "Temperatura",
+                    "port": 27,
+                    "unit": "°C"
+                },
+                {
+                    "name": "Luz",
+                    "port": 28,
+                    "unit": "lm"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "Intraccion",
+                    "port": 13
+                },
+                {
+                    "name": "Extraccion",
+                    "post": 12
+                },
+                {
+                    "name": "Iluminacion",
+                    "post": 11
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Cocina",
+            "token": "sdF24624&sdf24dgdfgasdfsdfsdfagr",
+            "inputs": [
+                {
+                    "name": "Humedad",
+                    "port": 26,
+                    "unit": "%"
+                },
+                {
+                    "name": "Temperatura",
+                    "port": 27,
+                    "unit": "°C"
+                },
+                {
+                    "name": "Luz",
+                    "port": 28,
+                    "unit": "lm"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "Intraccion",
+                    "port": 13
+                },
+                {
+                    "name": "Extraccion",
+                    "post": 12
+                },
+                {
+                    "name": "Iluminacion",
+                    "post": 11
+                }
+            ]
+        }
+    ]
+}

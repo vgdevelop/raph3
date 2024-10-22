@@ -1,0 +1,20 @@
+{
+    "mode": "",
+    "server": {
+        "port": "80",
+        "domain": "192.168.4.1",
+        "name": "",
+        "protocol": ""
+    },
+    "name": "",
+    "connection": "",
+    "token": "",
+    "exception_time": 5,
+    "client": {
+        "time_sync": "5",
+        "scope": ""
+    },
+    "reset_time": "5",
+    "inputs": [],
+    "outputs": []
+}
